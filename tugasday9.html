@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Toko Fadel</title>
+    <script defer  src="./tugasday9.js"> </script> 
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 5px 5px 5px 5px;
+            height: 50px;
+        }
+        table {
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <center>
+            <table>
+                <thead>
+                  &nbsp; <th>&nbsp;&nbsp;&nbsp; Form Product &nbsp;&nbsp;&nbsp;</th> 
+                 
+                   &nbsp;<th>&nbsp;&nbsp;&nbsp;Form Hewan &nbsp;&nbsp;&nbsp;</th>&nbsp;
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Form Product -->
+                        <td>
+                            <div>
+                                <form id="form1">
+                                    <p> &nbsp;&nbsp;&nbsp;Nama <input type="text" id="name" >&nbsp;&nbsp;&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;Harga <input type="number" id="price" >&nbsp;&nbsp;&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;Kategori
+                                        <select id="category">
+                                            <option value="elektronik">elektronik </option>
+                                            <option value="Pakaian"> Pakaian</option>
+                                            <option value="Otomotif"> Otomotif</option>
+
+                                        </select>&nbsp;&nbsp;&nbsp;
+                                    </p>
+                                        <p>&nbsp;&nbsp;&nbsp;Kondisi
+                                            <input type="radio" name="condition" value="new">Baru
+                                            <input type="radio" name="condition" value="old"> Second
+                                            &nbsp;&nbsp;&nbsp; </p>
+                                        <input type="button" value="Tambahkan" onclick="addNewProduct()">
+                                </form>
+                            </div>
+                        </td>
+                        <!-- Form Hewan -->
+                        <td>
+                            <div>
+                            <form id="form2">
+                                <p>&nbsp;&nbsp;&nbsp;Nama <input type="text" id="namaHewan">&nbsp;&nbsp;&nbsp;</p>
+                                <p>&nbsp;&nbsp;&nbsp;Harga <input type="number" id="hargaHewan">&nbsp;&nbsp;&nbsp;</p>
+                                <p>&nbsp;&nbsp;&nbsp;Kelamin 
+                                    <input type="radio" name="kelamin" value="Jantan"> Jantan
+                                    <input type="radio" name="kelamin" value="Betina"> Betina
+                                    &nbsp;&nbsp;&nbsp;</p>
+                                <p>&nbsp;&nbsp;&nbsp;Jenis 
+                                    <input type="radio" name="Jenis" value="liar" > Liar
+                                    <input type="radio" name="Jenis" value="peliharaan"> Peliharaan
+                                    &nbsp;&nbsp;&nbsp;</p>
+                                <input type="button" value="Tambahkan" onclick="tambahkan()"> 
+                            </form>
+                        </div>
+                            </td>  
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Product</th>
+                        <th>Data Hewan</th>
+                    </tr>
+                    <br>
+                </thead>
+                <tr>
+                    <td>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;&nbsp;&nbsp;Nama&nbsp;&nbsp;&nbsp;</th>
+                                    <th>&nbsp;&nbsp;&nbsp;Harga&nbsp;&nbsp;&nbsp;</th>
+                                    <th>&nbsp;&nbsp;&nbsp;Kategori&nbsp;&nbsp;&nbsp;</th>
+                                    <th>&nbsp;&nbsp;&nbsp;Kondisi&nbsp;&nbsp;&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody id="hasil"> 
+
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;&nbsp;&nbsp;Nama&nbsp;&nbsp;&nbsp;</th>
+                                    <th>&nbsp;&nbsp;&nbsp;Umur&nbsp;&nbsp;&nbsp;</th>
+                                    <th>&nbsp;&nbsp;&nbsp;Kelamin&nbsp;&nbsp;&nbsp;</th>
+                                    <th>&nbsp;&nbsp;&nbsp;Status&nbsp;&nbsp;&nbsp;</th>
+                                </tr>
+                            </thead>
+                                <tbody id="result">
+
+                                </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+    </center>
+</body>
+</html>
